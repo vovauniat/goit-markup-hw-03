@@ -39,6 +39,7 @@ img {
 .list {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -49,11 +50,16 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ============= COMPONENTS ============= */
 
@@ -64,7 +70,12 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #ffffff;
+
+  padding: 10px 32px;
   background-color: #2196f3;
+  min-width: 200;
+  border-radius: 4px;
+  margin-left: 700px;
 }
 
 .modal-btn:hover,
@@ -72,6 +83,7 @@ img {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
 .vibor-nav {
   font-weight: 500;
   font-size: 14px;
@@ -85,8 +97,21 @@ img {
 .main {
   background-color: var(--bd-color-pri);
 }
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -95,6 +120,15 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-right: 93px;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-link {
@@ -109,19 +143,44 @@ img {
 .navigation-link:focus {
   color: var(--accent-color);
 }
+
+.kontact-link:hover,
+.kontact-link:focus {
+  color: var(--accent-color);
+}
+
 .logo-head {
   color: #212121;
 }
+
 .logo-fut {
   color: #ffffff;
+}
+
+.kontact {
+  display: flex;
+  align-items: center;
+  padding-left: 331px;
+}
+.kontact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
 }
 /* ============= END HEADER ============= */
 
 /* ============= HERO ============= */
 .hero {
   background-color: var(--bd-color-sec);
+  width: 1600px;
+  height: 600px;
 }
 .hero-title {
+  margin-top: 106px;
+  margin-bottom: 40px;
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
