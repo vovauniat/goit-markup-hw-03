@@ -1,13 +1,15 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --main-color: #212121;
-  --secondary-color: #757575;
-  --accent-color: #2196f3;
-  --bd-color-pri: #ffffff;
-  --bd-color-sec: #2f303a;
+  --main-color: #212121; /* */
+  --secondary-color: #757575; /* */
+  --accent-color: #2196f3; /* color pri navedenii*/
+  --bd-color-pri: #ffffff; /* bagcround color priority*/
+  --bd-color-sec: #2f303a; /* bagcround color secondary*/
+  --section-pt: 94px; /* padding top for sect*/
+  --section-pb: 94px; /* padding bot for sect*/
 }
-
+/* дефолт настр */
 body {
   font-family: var(--main-font);
 }
@@ -50,6 +52,7 @@ img {
   width: 1px !important;
   overflow: hidden;
 }
+/* енд */
 
 .container {
   width: 1200px;
@@ -58,10 +61,12 @@ img {
   padding-right: 15px;
   text-align: center;
 }
-.section {
+/* задавало отступи для секций */
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
+
 /* ============= COMPONENTS ============= */
 
 .modal-btn {
@@ -70,8 +75,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
 
+  color: #ffffff;
   padding: 10px 32px;
   background-color: #2196f3;
   min-width: 200;
@@ -84,12 +89,16 @@ img {
   color: #ffffff;
 }
 
-.vibor-nav {
+/* .vibor-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+} */
+/* когда поль на стр то в навиг её выделяет другим цветом */
+.focus-page {
+  color: #2196f3;
 }
 /* ============= END COMPONENTS ============= */
 
@@ -176,6 +185,8 @@ img {
   background-color: var(--bd-color-sec);
   width: auto;
   height: 600px;
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
 }
 .hero-title {
   margin-top: 106px;
@@ -191,7 +202,11 @@ img {
 }
 /* ============= END HERO ============= */
 /* ============= osobenosti ============= */
+
 .features {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -199,6 +214,21 @@ img {
   color: #9da4bd;
   background-color: var(--bd-color-pri);
 }
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.features-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: left;
+}
+
 .features-zago {
   font-weight: 700;
   font-size: 14px;
@@ -206,22 +236,41 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
 .features-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-top: 10px;
 }
 /* =============  end osobenosti ============= */
 /* ==================chem zanimaemsia ===================*/
-.heading2 {
+.chemzan {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.title-chemzan {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
+
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
+
+.chemzan-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /*  =================end chem zanimaemsia ================*/
 
 /* ============= KOMANDA ============= */
