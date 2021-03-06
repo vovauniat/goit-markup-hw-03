@@ -305,6 +305,10 @@ img {
 
 .team-list-content-wrapper {
   padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-person {
@@ -328,7 +332,7 @@ img {
 .footer {
   background-color: var(--bd-color-sec);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 }
 
 .footer .container {
@@ -366,6 +370,22 @@ img {
 /*  ================ PORTFOLIO PAGE CSS ============ */
 
 /* ========== FILTER =========== */
+.portfolio {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
@@ -374,6 +394,9 @@ img {
   cursor: pointer;
   color: var(--main-color);
   background-color: #f5f4fa;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -382,6 +405,28 @@ img {
 }
 /* ===============END FILTER =============== */
 /* =============== PODELKI =================== */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.work-list-content-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+}
+
+.projects-elm {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .projects-name {
   font-weight: 700;
   font-size: 18px;
